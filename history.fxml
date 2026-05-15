@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="atm.HistoryController"
+      alignment="CENTER" spacing="20" style="-fx-background-color: #1a1a2e; -fx-padding: 40;">
+
+    <Label text="Transaction History" style="-fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <ListView fx:id="historyList" prefHeight="400" prefWidth="340"
+              style="-fx-background-color: #16213e; -fx-text-fill: white;"/>
+
+    <Button text="Back" onAction="#handleBack" maxWidth="Infinity"
+            style="-fx-background-color: #16213e; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10; -fx-cursor: hand;"/>
+</VBox>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="atm.LoginController"
+      alignment="CENTER" spacing="20"
+      style="-fx-background-color: #1a1a2e;">
+
+    <padding><Insets top="60" right="40" bottom="60" left="40"/></padding>
+
+    <Label text="ATM Machine"
+           style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #e0e0e0;"/>
+
+    <VBox spacing="6">
+        <Label text="Account Number" style="-fx-text-fill: #a0a0c0;"/>
+        <TextField fx:id="accountNumberField" promptText="Enter account number"
+                   style="-fx-font-size: 14px;"/>
+    </VBox>
+
+    <VBox spacing="6">
+        <Label text="PIN" style="-fx-text-fill: #a0a0c0;"/>
+        <PasswordField fx:id="pinField" promptText="Enter PIN"
+                       style="-fx-font-size: 14px;"/>
+    </VBox>
+
+    <Button text="Login" onAction="#handleLogin"
+            maxWidth="Infinity"
+            style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #4a90d9; -fx-text-fill: white; -fx-padding: 10px;"/>
+
+    <Label fx:id="errorLabel" text="" style="-fx-text-fill: #ff6b6b;"/>
+
+</VBox>

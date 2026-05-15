@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="atm.MenuController"
+      alignment="CENTER" spacing="20" style="-fx-background-color: #1a1a2e; -fx-padding: 60;">
+
+    <Label text="ATM Machine" style="-fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <Label fx:id="welcomeLabel" text="Welcome!" style="-fx-text-fill: #aaaaaa; -fx-font-size: 14px;"/>
+    <Label fx:id="balanceLabel" text="Balance: $0.00" style="-fx-text-fill: #4ecca3; -fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <VBox spacing="12" maxWidth="300">
+        <Button text="Check Balance" onAction="#handleBalance" maxWidth="Infinity"
+                style="-fx-background-color: #0f3460; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 12; -fx-cursor: hand;"/>
+        <Button text="Withdraw" onAction="#handleWithdraw" maxWidth="Infinity"
+                style="-fx-background-color: #0f3460; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 12; -fx-cursor: hand;"/>
+        <Button text="Deposit" onAction="#handleDeposit" maxWidth="Infinity"
+                style="-fx-background-color: #0f3460; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 12; -fx-cursor: hand;"/>
+        <Button text="Transaction History" onAction="#handleHistory" maxWidth="Infinity"
+                style="-fx-background-color: #16213e; -fx-text-fill: #4ecca3; -fx-font-size: 14px; -fx-padding: 12; -fx-cursor: hand;"/>
+        <Button text="Logout" onAction="#handleLogout" maxWidth="Infinity"
+                style="-fx-background-color: #c0392b; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 12; -fx-cursor: hand;"/>
+    </VBox>
+</VBox>

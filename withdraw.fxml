@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="atm.WithdrawController"
+      alignment="CENTER" spacing="20" style="-fx-background-color: #1a1a2e; -fx-padding: 60;">
+
+    <Label text="Withdraw" style="-fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <Label fx:id="balanceLabel" text="Balance: $0.00" style="-fx-text-fill: #4ecca3; -fx-font-size: 16px;"/>
+
+    <VBox spacing="10" maxWidth="300">
+        <Label text="Amount" style="-fx-text-fill: white;"/>
+        <TextField fx:id="amountField" promptText="Enter amount"
+                   style="-fx-background-color: #16213e; -fx-text-fill: white; -fx-prompt-text-fill: gray; -fx-padding: 10; -fx-font-size: 14px;"/>
+        <Label fx:id="errorLabel" text="" style="-fx-text-fill: #ff6b6b;"/>
+        <Button text="WITHDRAW" onAction="#handleWithdraw" maxWidth="Infinity"
+                style="-fx-background-color: #0f3460; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 12; -fx-cursor: hand;"/>
+        <Button text="Back" onAction="#handleBack" maxWidth="Infinity"
+                style="-fx-background-color: #16213e; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10; -fx-cursor: hand;"/>
+    </VBox>
+</VBox>
